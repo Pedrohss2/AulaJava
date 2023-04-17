@@ -1,3 +1,5 @@
+package ExercíciosOperaçõesMatemáticas;
+
 import java.util.Scanner;
 
 public class Exercício4 {

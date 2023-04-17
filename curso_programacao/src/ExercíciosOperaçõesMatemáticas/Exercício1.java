@@ -1,3 +1,5 @@
+package ExercíciosOperaçõesMatemáticas;
+
 import java.util.Locale;
 
 //First fixation exercise
