@@ -28,7 +28,7 @@ public class Exercício6 {
         System.out.printf("Triangulo :  %.3f%n", TRIANGULO);
         System.out.printf("Circulo :  %.3f%n", CIRCULO);
         System.out.printf("Trapezio :   %.3f%n", TRAPEZIO);
-        System.out.printf("Quadrado :  %.3f%n", QUADRADO);
+        System.out.printf("QUADRADO :  %.3f%n", QUADRADO);
         System.out.printf("RETANGULO :   %.3f%n", RETANGULO);
 
         sc.close();

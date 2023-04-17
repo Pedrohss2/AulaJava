@@ -12,7 +12,7 @@ public class Exercício2 {
         number2 = sc.nextInt();
 
         int sum = number1 + number2;
-        System.out.println("Soma " + sum);
+        System.out.println("Sum " + sum);
 
         sc.close();
     }

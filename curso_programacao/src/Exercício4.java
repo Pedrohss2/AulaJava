@@ -13,7 +13,7 @@ public class Exercício4 {
         C = sc.nextInt();
         D = sc.nextInt();
         differenceOfProducts = (A * B - C * D);
-        System.out.println("Difference:" + differenceOfProducts);
+        System.out.println("Difference = " + differenceOfProducts);
         sc.close();
 
     }

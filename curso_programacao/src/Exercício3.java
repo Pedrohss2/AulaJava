@@ -12,7 +12,7 @@ public class Exercício3 {
 
         double ray, area, PI =3.1415;
 
-        System.out.println("Enter the radius value");
+        System.out.println("Enter the radius value:");
         ray = sc.nextDouble();
 
         area = PI * Math.pow(ray, 2.0);

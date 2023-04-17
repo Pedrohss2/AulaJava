@@ -9,10 +9,10 @@ public class Exercício5 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("enter the employee number");
+        System.out.println("enter the employee number:");
         int employeeNumber = sc.nextInt();
 
-        System.out.println("Enter the number of hours worked");
+        System.out.println("Enter the number of hours worked:");
         int NumberOfHoursWorked = sc.nextInt();
 
         double wage = sc.nextDouble();

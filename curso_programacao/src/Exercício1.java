@@ -6,7 +6,7 @@ public class Exercício1 {
     public static void main(String[] args) {
         System.out.println("HELLO WORLD");
         String product1 = "Computer";
-        String product2 = "Office desk";
+        String product2 = "Office desk.";
 
         int age = 37;
         int code = 5290;
