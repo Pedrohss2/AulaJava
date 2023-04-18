@@ -10,8 +10,6 @@ import java.util.Scanner;
     Se o ponto estiver sobre um dos eixos escreva “Eixo X” ou “Eixo Y”, conforme for a
     situação
     */
-
-
 public class Exercicio7 {
     public static void main(String[] args) {
 
