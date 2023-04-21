@@ -43,5 +43,7 @@ public class Exercicio9 {
             System.out.println("Amaior altura é "+maiorAltura + " e a menor altura é" + menorAltura);
             System.out.println("A media de altura dos homens é: " + mediaDeAlturaDosHomens);
             System.out.println("A quantidade de mulheres é: "+ numerosDeMulheres);
+        
+            sc.close();
     }
 }
