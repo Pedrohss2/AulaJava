@@ -16,7 +16,7 @@ public class Exercicio9 {
         int sexoDaPessoa, numeroDeHomes = 0, numerosDeMulheres = 0;
         float alturaDaPessoa = 0, mediaDeAlturaDosHomens = 0, maiorAltura = 0, menorAltura = 0, somaH = 0;
 
-        for(int i = 0; i<2; i++) {
+        for(int i = 0; i<10; i++) {
             System.out.println("Qual seu sexo? (1-Masculino) (2-Feminino)");
             sexoDaPessoa = sc.nextInt();
             System.out.println("Digite sua altura");
