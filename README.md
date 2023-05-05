@@ -7,4 +7,8 @@
   Repositório criado para armazenar exercícios de logica em java.
   Esse respositório estará sendo atualizado diariamente, com o objetivo de armazenar exercícios para futuras pesquisas e atualizações de códigos.
 </h2>
+<h2>
+Repository created to store logic exercises in java.
+  This repository will be updated daily, with the aim of storing exercises for future research and updates.
+</h2>
 
