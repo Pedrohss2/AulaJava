@@ -23,7 +23,7 @@ public class Exercicio08 {
         }
 
         for(int i = 0; i<numero.length;i++){
-            if(numero[i] %2 == 0){
+            if(numero[i] % 2 == 0){
                 quantidade = quantidade + numero[i];
                 numeroPares++;
             }
