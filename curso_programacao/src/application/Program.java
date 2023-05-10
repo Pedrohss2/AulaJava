@@ -28,6 +28,7 @@ public class Program {
             System.out.println("Room: ");
             int room = sc.nextInt();
 
+            //A posição do quarto vai ser estanciado o nome e email...
             rent[room] = new Rent(name, email);
         }
 
