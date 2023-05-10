@@ -9,33 +9,34 @@ public class Program {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        Rent[] vect = new Rent[10];
+        Rent[] rent = new Rent[10];
 
-        System.out.println("How many rooms will be rented");
-        int value = sc.nextInt();
+        System.out.println("How many rooms will be rented? ");
+        int n = sc.nextInt();
 
-        for(int i = 0; i< value;i++) {
-            System.out.printf("Rent #%d%n", i+1);
+        for(int i = 1; i<= n; i++) {
+            System.out.println("Rent # " + i + ":");
 
-            System.out.print("Name");
+            System.out.println("Name: ");
             sc.nextLine();
             String name = sc.nextLine();
-            System.out.print("Email = ");
-            String email = sc.nextLine();
 
-            System.out.print("Room =");
+
+            System.out.println("Email: ");
+            String email = sc.next();
+
+            System.out.println("Room: ");
             int room = sc.nextInt();
 
-            Rent rent = new Rent(name, email);
-
-            vect[room] = new Rent(name, email);
+            rent[room] = new Rent(name, email);
         }
 
-        System.out.println("Busy rooms");
-        for(int i = 0;i < 10;i++) {
-            if(vect[i] != null){
-                System.out.println(i + ":" + vect[i]);
+        System.out.println("busy rooms");
+        for(int i = 0; i < rent.length; i++){
+            if(rent[i] != null) {
+                System.out.println(i + ": " + rent[i]);
             }
         }
+        sc.close();
     }
 }
