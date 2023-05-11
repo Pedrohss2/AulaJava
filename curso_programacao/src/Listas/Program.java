@@ -1,53 +1,64 @@
 package Listas;
 
-import java.util.ArrayList;
-import java.util.List;
+import org.jetbrains.annotations.NotNull;
+
+import java.sql.SQLOutput;
+import java.util.*;
 import java.util.stream.Collectors;
 
-/*
-Tamanho da lista
-list.size();
 
-
-list.add(2, "Julia");
-list.remove(1);
-*/
 public class Program {
     public static void main(String[] args) {
-        //Não aceita tipos primitivos
+        //Lista de numero intero
+        //Instanciar uma classe que implementa a interface
         List<String> list = new ArrayList<>();
-        list.add("Maria");// [0]
-        list.add("Alex");
-        list.add("Bob");
-        list.add("Ana");
 
+        //Adicionar elementos
+        list.add("Lucas");
+        list.add("Maria");
+        list.add("Bob");
+        list.add("Alex");
+
+        //Inserir um elemento em determinada posição
+        list.add(2, "Joao");
+
+        //Tamanho da lista
         System.out.println(list.size());
 
 
-        for (String lista : list) {
-            System.out.println(lista);
+        for(String x : list) {
+            System.out.println(x);
         }
-        System.out.println("----------------------");
+        System.out.println("------------------");
+        //Remover elemento da lista
+        //list.remove(1);
 
-        //PREDICADO [true or false]
-        list.removeIf(lista -> lista.charAt(0) == 'M');
+        //Remover por um predicado:
+        //Função lambda:
+        //True or False
+        list.removeIf(x -> x.charAt(0) == 'M');
 
-        for (String lista : list) {
-            System.out.println(lista);
+        for(String x : list) {
+            System.out.println(x);
         }
-
-        System.out.println("----------------------");
+        System.out.println("------------------");
+        //Posição de um elemento:
         System.out.println("Index of Bob " + list.indexOf("Bob"));
+        System.out.println("Index of Marco " + list.indexOf("Marco"));
 
-        System.out.println("----------------------");
-         List<String> result = list.stream().filter(lista -> lista.charAt(0) == 'B').collect(Collectors.toList());
+        System.out.println("------------------");
+        //Filtar minha lista:
+        //Criar uma nova lista, contendo apenas os nomes comecando com 'A'                                                                    //Para converter para lista:
+        List<String> result = list.stream().filter(x -> x.charAt(0) == 'A').collect(Collectors.toList());
 
-        for (String lista : result) {
-            System.out.println(lista);
+        for(String x : result) {
+            System.out.println(x);
         }
 
-        System.out.println("----------------------");
-        String name = list.stream().filter(lista -> lista.charAt(0) == 'c').findFirst().orElse(null);
+        System.out.println("------------------");
+        //O primeiro elemento que atenda o predicado:                           Retorna um opn String
+                                                                                 //Se o elemnto nao existir, retorna NULL
+        String name = list.stream().filter((x -> x.charAt(0) == 'K')).findFirst().orElse(null);
         System.out.println(name);
     }
 }
